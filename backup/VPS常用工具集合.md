@@ -1,3 +1,8 @@
+# singbox脚本
+```
+bash <(wget -qO- -o- https://github.com/233boy/sing-box/raw/main/install.sh)
+```
+
 # realm转发
 ```
 wget -qO- https://raw.githubusercontent.com/zywe03/realm-xwPF/main/xwPF.sh | sudo bash -s install
