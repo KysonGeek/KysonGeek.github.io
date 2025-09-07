@@ -29,3 +29,7 @@ net.ipv6.conf.default.disable_ipv6 = 1
 ```
 sudo sysctl -p
 ```
+测试
+```
+getent ahosts google.com
+```
