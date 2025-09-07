@@ -28,7 +28,20 @@ wget --no-check-certificate -qO InstallNET.sh 'https://raw.githubusercontent.com
 # systemctl
 ```
 systemctl list-units --type=service
-``` 。">
+``` 
+
+# 关闭ipv6
+```
+sudo nano /etc/sysctl.conf
+```
+```
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+```
+```
+sudo sysctl -p
+```
+。">
 <meta property="og:title" content="VPS常用工具集合">
 <meta property="og:description" content="# realm转发
 ```
@@ -48,7 +61,20 @@ wget --no-check-certificate -qO InstallNET.sh 'https://raw.githubusercontent.com
 # systemctl
 ```
 systemctl list-units --type=service
-``` 。">
+``` 
+
+# 关闭ipv6
+```
+sudo nano /etc/sysctl.conf
+```
+```
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+```
+```
+sudo sysctl -p
+```
+。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://KysonGeek.github.io/post/VPS-chang-yong-gong-ju-ji-he.html">
 <meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
@@ -130,6 +156,14 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </code></pre>
 <h1>systemctl</h1>
 <pre class="notranslate"><code class="notranslate">systemctl list-units --type=service
+</code></pre>
+<h1>关闭ipv6</h1>
+<pre class="notranslate"><code class="notranslate">sudo nano /etc/sysctl.conf
+</code></pre>
+<pre class="notranslate"><code class="notranslate">net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+</code></pre>
+<pre class="notranslate"><code class="notranslate">sudo sysctl -p
 </code></pre></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 

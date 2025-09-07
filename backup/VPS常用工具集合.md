@@ -17,3 +17,15 @@ wget --no-check-certificate -qO InstallNET.sh 'https://raw.githubusercontent.com
 ```
 systemctl list-units --type=service
 ``` 
+
+# 关闭ipv6
+```
+sudo nano /etc/sysctl.conf
+```
+```
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+```
+```
+sudo sysctl -p
+```
