@@ -1,8 +1,3 @@
-# singbox脚本
-```
-bash <(wget -qO- -o- https://github.com/233boy/sing-box/raw/main/install.sh)
-```
-
 # realm转发
 ```
 wget -qO- https://raw.githubusercontent.com/zywe03/realm-xwPF/main/xwPF.sh | sudo bash -s install
@@ -17,3 +12,8 @@ bash <(curl -sL https://sh.nodeseek.com)
 ```
 wget --no-check-certificate -qO InstallNET.sh 'https://raw.githubusercontent.com/leitbogioro/Tools/master/Linux_reinstall/InstallNET.sh' && chmod a+x InstallNET.sh && bash InstallNET.sh -debian 12 -pwd 'password'
 ```
+
+# systemctl
+```
+systemctl list-units --type=service
+``` 
