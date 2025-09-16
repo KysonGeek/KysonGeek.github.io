@@ -32,4 +32,10 @@ sudo sysctl -p
 测试
 ```
 getent ahosts google.com
+// 检查
+sysctl net.ipv6.conf.all.disable_ipv6
+sysctl net.ipv6.conf.default.disable_ipv6
+// 手动处理
+sudo sysctl -w net.ipv6.conf.all.disable_ipv6=0
+sudo sysctl -w net.ipv6.conf.default.disable_ipv6=0
 ```

@@ -44,6 +44,12 @@ sudo sysctl -p
 测试
 ```
 getent ahosts google.com
+// 检查
+sysctl net.ipv6.conf.all.disable_ipv6
+sysctl net.ipv6.conf.default.disable_ipv6
+// 手动处理
+sudo sysctl -w net.ipv6.conf.all.disable_ipv6=0
+sudo sysctl -w net.ipv6.conf.default.disable_ipv6=0
 ```
 。">
 <meta property="og:title" content="VPS常用工具集合">
@@ -81,6 +87,12 @@ sudo sysctl -p
 测试
 ```
 getent ahosts google.com
+// 检查
+sysctl net.ipv6.conf.all.disable_ipv6
+sysctl net.ipv6.conf.default.disable_ipv6
+// 手动处理
+sudo sysctl -w net.ipv6.conf.all.disable_ipv6=0
+sudo sysctl -w net.ipv6.conf.default.disable_ipv6=0
 ```
 。">
 <meta property="og:type" content="article">
@@ -175,6 +187,12 @@ net.ipv6.conf.default.disable_ipv6 = 1
 </code></pre>
 <p>测试</p>
 <pre class="notranslate"><code class="notranslate">getent ahosts google.com
+// 检查
+sysctl net.ipv6.conf.all.disable_ipv6
+sysctl net.ipv6.conf.default.disable_ipv6
+// 手动处理
+sudo sysctl -w net.ipv6.conf.all.disable_ipv6=0
+sudo sysctl -w net.ipv6.conf.default.disable_ipv6=0
 </code></pre></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
